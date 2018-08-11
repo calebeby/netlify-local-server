@@ -15,6 +15,7 @@ export const validateUrl = (url: string[]): string[] => {
       `* must be the only part of a url segment. '${invalidChunk}' is invalid`,
     )
   }
+  return url
 }
 
 export const validateInputUrl = (url: string[]): string[] => {
@@ -28,4 +29,5 @@ export const validateInputUrl = (url: string[]): string[] => {
       `:splat cannot be used as a placeholder, because it is reserved for *`,
     )
   }
+  return url
 }

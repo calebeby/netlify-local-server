@@ -1,6 +1,9 @@
 import { validateInputUrl, validateUrl } from '.'
 
 describe('validates all urls', () => {
+  it('should return the input url if there are no problems', () => {
+    expect(validateUrl(['foo', 'bar', '*'])).toEqual(['foo', 'bar', '*'])
+  })
   it('should not allow url segments to have * if that is not the whole chunk', () => {
     expect(() => validateUrl(['foo', 'asdf*']))
       .toThrowErrorMatchingInlineSnapshot(`
@@ -11,6 +14,9 @@ describe('validates all urls', () => {
 })
 
 describe('validates input urls', () => {
+  it('should return the url if there are no problems', () => {
+    expect(validateInputUrl(['foo', 'bar', '*'])).toEqual(['foo', 'bar', '*'])
+  })
   it('should only allow * at the end of urls', () => {
     expect(() => validateInputUrl(['foo', 'bar', '*', 'baz']))
       .toThrowErrorMatchingInlineSnapshot(`
