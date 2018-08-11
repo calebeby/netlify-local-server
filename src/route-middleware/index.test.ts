@@ -18,11 +18,13 @@ test.each`
                 from: ['asdf', 'bar'],
                 to: ['baz'],
                 code: 301,
+                queryParams: {},
               },
               {
                 from: ['foo', 'bar'],
                 to: [],
                 code: 200,
+                queryParams: {},
               },
             ],
           }),

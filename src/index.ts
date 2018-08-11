@@ -18,6 +18,7 @@ bs.init(
             from: ['styles', 'fonts'],
             to: [],
             code: 200,
+            queryParams: {},
           },
         ],
       }),
