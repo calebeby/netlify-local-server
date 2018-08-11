@@ -15,6 +15,7 @@ Array [
   Object {
     "code": 200,
     "from": Array [],
+    "queryParams": Object {},
     "to": Array [
       "something",
       "else",
@@ -26,6 +27,7 @@ Array [
       "foo",
       "*",
     ],
+    "queryParams": Object {},
     "to": Array [
       ":something",
       "else",
@@ -36,9 +38,50 @@ Array [
     "from": Array [
       "baz",
     ],
+    "queryParams": Object {},
     "to": Array [
       "something",
       "else",
+    ],
+  },
+]
+`)
+})
+
+test('parses query params', () => {
+  expect(
+    parseConfig(`
+/store id=:id  /blog/:id
+/articles id=:id tag=:tag /posts/:tag/:id 301
+`),
+  ).toMatchInlineSnapshot(`
+Array [
+  Object {
+    "code": 301,
+    "from": Array [
+      "store",
+    ],
+    "queryParams": Object {
+      "id": ":id",
+    },
+    "to": Array [
+      "blog",
+      ":id",
+    ],
+  },
+  Object {
+    "code": 301,
+    "from": Array [
+      "articles",
+    ],
+    "queryParams": Object {
+      "id": ":id",
+      "tag": ":tag",
+    },
+    "to": Array [
+      "posts",
+      ":tag",
+      ":id",
     ],
   },
 ]
