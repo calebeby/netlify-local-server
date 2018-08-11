@@ -1,4 +1,4 @@
-import { printUrl } from '../route-middleware'
+import { printUrl } from '../utils'
 
 const createUrlError = (url: string[], error: string) =>
   new Error(

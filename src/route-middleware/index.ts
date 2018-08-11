@@ -1,11 +1,10 @@
 import { MiddlewareHandler } from 'browser-sync'
 import { ParsedConfig, Route, parseUrl } from '../parse-config'
+import { printUrl } from '../utils'
 
 interface RoutingOptions {
   routes: ParsedConfig
 }
-
-export const printUrl = (input: string[]) => '/' + input.join('/')
 
 const routeMatches = (url: string) => (route: Route): boolean => {
   const parsedUrl = parseUrl(url)
