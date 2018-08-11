@@ -31,3 +31,10 @@ export const validateInputUrl = (url: string[]): string[] => {
   }
   return url
 }
+
+export const validateOutputUrl = (url: string[]): string[] => {
+  if (url.some(c => c.includes('*'))) {
+    throw createUrlError(url, "Ouptut urls cannot use '*'")
+  }
+  return url
+}
