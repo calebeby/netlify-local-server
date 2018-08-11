@@ -1,22 +1,4 @@
-interface QueryParams {
-  [queryParam: string]: string
-}
-
-export interface Route {
-  from: string[]
-  to: string[]
-  code: number
-  queryParams: QueryParams
-}
-
-export type ParsedConfig = Route[]
-
-/**
- * Splits a url into chunks
- * @param input The url to parse
- */
-export const parseUrl = (url: string): string[] =>
-  url.split('/').filter(c => c !== '')
+import { Route, QueryParams, parseUrl } from '../utils'
 
 const parseQueryParam = (chunk: string): [string, string] | false => {
   const split = chunk.split('=')

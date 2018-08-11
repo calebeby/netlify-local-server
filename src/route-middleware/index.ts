@@ -1,6 +1,5 @@
 import { MiddlewareHandler } from 'browser-sync'
-import { ParsedConfig, Route, parseUrl } from '../parse-config'
-import { printUrl } from '../utils'
+import { printUrl, ParsedConfig, parseUrl, Route } from '../utils'
 
 interface RoutingOptions {
   routes: ParsedConfig
