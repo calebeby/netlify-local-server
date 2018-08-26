@@ -54,7 +54,7 @@
     "trailingComma": "all"
   },
   "dependencies": {
-    "browser-sync": "2.24.6",
+    "browser-sync": "2.24.7",
     "clipboardy": "1.2.3",
     "kleur": "2.0.1"
   }
