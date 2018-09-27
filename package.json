@@ -9,7 +9,7 @@
     "@babel/plugin-transform-modules-commonjs": "7.1.0",
     "@babel/preset-typescript": "7.1.0",
     "@cloudfour/eslint-config": "1.0.0",
-    "@types/browser-sync": "0.0.41",
+    "@types/browser-sync": "0.0.42",
     "@types/clipboardy": "1.1.0",
     "@types/connect": "3.4.32",
     "@types/jest": "23.3.2",
