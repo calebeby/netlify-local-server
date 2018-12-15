@@ -5,8 +5,8 @@
     "netlify-local-server": "./cli.js"
   },
   "devDependencies": {
-    "@babel/core": "7.1.0",
-    "@babel/plugin-transform-modules-commonjs": "7.1.0",
+    "@babel/core": "7.2.2",
+    "@babel/plugin-transform-modules-commonjs": "7.2.0",
     "@babel/preset-typescript": "7.1.0",
     "@cloudfour/eslint-config": "1.0.0",
     "@types/browser-sync": "0.0.41",
