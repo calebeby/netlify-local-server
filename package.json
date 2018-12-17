@@ -56,6 +56,6 @@
   "dependencies": {
     "browser-sync": "2.24.7",
     "clipboardy": "1.2.3",
-    "kleur": "2.0.2"
+    "kleur": "3.0.1"
   }
 }
