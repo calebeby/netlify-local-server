@@ -32,7 +32,7 @@
     "prettier": "1.14.3",
     "supertest": "3.3.0",
     "typescript": "3.0.3",
-    "typescript-eslint-parser": "18.0.0"
+    "typescript-eslint-parser": "21.0.2"
   },
   "scripts": {
     "start": "tsc --watch",
