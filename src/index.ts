@@ -11,6 +11,7 @@ bs.init(
     port: 2345,
     open: false,
     reloadOnRestart: true,
+    single: true,
     middleware: [
       netlifyRouteMiddleware({
         routes: [
